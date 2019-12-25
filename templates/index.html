@@ -1,0 +1,143 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<title>Asian Logistics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+    img.w3-image{
+       display: block;
+        margin-top: 6%;
+    }
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:2px;">
+     <img src={% static "img/Asian_Logistic_logo.png" %}>
+     <img src="{% static "img/Asian_Logistic_Name.png" %}">
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Services</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src={% static "img/office.jpg"%} alt="office width="1600" height="500">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Office</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About</h1><br>
+      <h3 class="w3-center">Established in 2017</h3>
+      <h5 class="w3-center">Founder R M Yadav</h5>
+      <p class="w3-large">Asian Logistics was established in 2017 with reliability and timely service, the company has grown progressively to  become a major a reliable player in the sector of logistics. it is currently serving in the following states of india which are Uttar pradesh, bihar, West bengal, Assam, Maharastra and will expand its areas all over india.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">We are specialist in container supplier Nagpur to guwhati, full and part load all over india tailor made services suitable or individual needs that start from the origin get personalised attention.</p>
+      <p class="w3-medium">we strive to build a working bond that ensures clients get relaible services thus getting added value for their money.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Services</h1><br>
+      <h4>Part load</h4>
+      <p class="w3-text-grey">We provide services on part load and mini lorries</p><br>
+
+      <h4>Full load</h4>
+      <p class="w3-text-grey">We also provide services for full load services for heavy lorries.</p><br>
+
+      <h4>Line  work</h4>
+      <p class="w3-text-grey">All over india</p><br>
+
+      <h4>Branches</h4>
+      <p class="w3-text-grey">Pune,Raipur,Hyderabad,bombay</p><br>
+
+{#      <h4>Blueberry Pancakes</h4>#}
+{#      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>#}
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+        <img class="w3-round w3-image w3-opacity-min" src={% static "/img/partload.jpg"%} alt="Menu" style="width:100%">
+{#        <img class="w3-round w3-image " src={% static "/img/"%} alt="Menu" style="width:100%">#}
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE WE WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+  <div class="w3-row w3-padding-20 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+          <div class="w3-row-padding">
+          <div class="w3-quarter">
+            Address:
+          </div>
+          <div class="w3-half">
+            Asian logistics shop no 1 pandav bhawan near aasha hospital suraksha nagar dattawadi amravati road wadi nagpur 23.
+          </div>
+        </div>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +91 7057378589,8806597589<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: asianlogistics@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+<!-- End page content -->
+</div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p><a title="W3.CSS" target="_blank" class="w3-hover-text-green">&copy;Developed by Bipin Yadav 2019</a></p>
+    <p>All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
